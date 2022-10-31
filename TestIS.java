@@ -1,18 +1,3 @@
-// Name: Noah Clark
-// Class: CS 4306/4
-// Term: Fall 2022
-// Instructor: Dr. Haddad
-// Assignment: 2
-
-//!!!!NOTE!!!!: I'm not sure if the algorithm design block was required for this java file but I created it anyways. Please ignore it if it is not required. 
-
-// Algorithm Design Block:
-/* Problem Statement:
- * We are given the class interpolationSearch and need to provide it with the proper inputs. Additionally, we need to create a menu for the user to operate.
- * To achieve this, we need to create a method that will return a sorted integer array (size 1024) of random numbers.
- * Therefore, our algorithm must sort the array before passing it to the InterpolationSearch Class.
- * Additionally, we need to establish a method that will print a working menu for the user.
-*/
 
 /* Algorithm Logical Steps:
  * (For RandomDistinct)
