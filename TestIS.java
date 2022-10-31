@@ -11,61 +11,6 @@
  * 3. Repeat or exit program when user enters 4
 */
 
-/* Algorithm Pseudo-code Syntax:
- * 
- * RandomDistinct returns integer-array given nothing{
- *		//Create integer array of size 1024
- * 		integer Values[1024]
- * 		integer randomNumber = number from 1 to 9999
- * 
- * 		while currentIndex less than length of Values:
- * 			//Either a for loop or another method for checking duplicate numbers should be inserted here
- * 			if randomNumber is not in the array:
- * 				Values[currentIndex] = randomNumber
- * 				currentIndex = currentIndex+1
- * 				
- * 		
- * 		//This is bubble sort
- * 		while array remains unsorted:
- * 			for i to the length of Values:
- * 				if [i] is greater than [i+1]:
- * 					swap i and i+1
- * 		
- * }
- * 
- * RunIS returns nothing given nothing{
- * 
- * 		while user has not entered 4 (quit):
- * 			print the user menu
- * 			scan for options 1, 2, 3, or 4
- * 			switch statement:
- * 				option 1:
- * 					Values = randomDistinct()
- * 					print(Values) //Only print 30 values per line
- * 				option 2:
- * 					ask user for table size 
- * 					scan user input
- * 				option 3:
- * 					print table 
- * 					create random key
- * 					create new InterpolationSearch object (given Values, key)
- * 					print results and repeat for length of table size
- * 				option 4:
- * 					quit program
- * }
-*/
-
-// Implementation Section:
-// This class implements the main method and other methods used to call the interpolation search created in the other class.
-// The code starts by executing RunIS() in the main method. This executes the menu for the user to navigate. Here are the menu options explained:
-// 		Option 1 of the menu will call the method RandomDistinct() and output the values array with 30 of them on each line.
-// 		Option 2 will ask the user for a tableSize and set the tableSize variable.
-// 		Option 3 will execute the interpolation search code ONLY IF option 1 and 2 have run first.
-// 		Option 4 Closes the program
-// The entire menu is enclosed within a while loop and try/catch statement to ensure a valid input from the user.
-// In addition to the code for printing the menu, this class includes the method RandomDistinct() which creates an array of size 1024 with random numbers from 1 to 9999.
-// After creating the random array, it is then sorted.
-
 import java.util.*;
 
 //TestIS class
