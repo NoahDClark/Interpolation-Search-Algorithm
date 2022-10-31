@@ -1,15 +1,3 @@
-// Name: Noah Clark
-// Class: CS 4306/4
-// Term: Fall 2022
-// Instructor: Dr. Haddad
-// Assignment: 2
-
-// Algorithm Design Block:
-/* Problem Statement:
- * There is a sorted array of size 1024 and we are asked to find the index for the provided key (value) if it exists within the array.
- * To achieve this while also maintaining a time complexity of log(log(n)), we need to develop a decrease and conquer algorithm.  
- * Therefore, our algorithm must mimic the way we search for a name in a telephone book.
-*/
 
 /* Algorithm Logical Steps:
  * Given the array Values and the integer Key:
@@ -21,43 +9,6 @@
  * 
  * Note: for the equation, L = left most index, R = right most index, A = array values, and key = key.
 */
-
-/* Algorithm Pseudo-code Syntax:
- * 
- * interpolationSearchMethod returns void given integer-array Values and integer key
- * {
- * 		//Creating necessary variables for tracking the current indicies when splitting the array
- * 		leftMost = 0
- * 		rightMost = length of array Values
- * 
- * 		//While loop with conditions that ensure it runs only if it is possible that the key exists in the array.
- * 		while (leftMost is less than rightMost) and (Values[leftMost] < Values[position]) and (Values[position] < Values[rightMost]):
- * 			//Setting index for position which will either find the key or be the point by which the array is split.
- * 			position = leftMost + ((key-values[leftMost]) * (rightMost - leftMost))/(Values[rightMost]-Values[leftMost])
- * 
- * 			IF (Values[position] is equal to the key):
- * 				//Updates the variables within class interpolationSearch
- * 				Index = position
- * 				Found = true
- * 			else:
- * 				//Divides the array either above or below the current position depending on the value of the key
- * 				Division++
- * 				if (Value[position] is less than the key):
- * 					leftMost = position+1
- * 				else if (Value[position] is greater than the key):
- * 					rightMost = position-1
- * }
-*/
-
-// Implementation Section:
-// This class named implements the required variables and methods to execute interpolation search.
-// It uses three main variables: Boolean found, int Index, and int Divisions.
-// These three variables are used to indicate the number of divisions, if the key was found, and at what index the key is located.
-// The class then uses a constructor which takes in an array and key. The constructor defaults to setting the variables to False, -1, and 0.
-// This constructor calls the interpolationSearchMethod discussed above and passes the required variables.
-// This method then updates the three variables declared within the class as needed.
-// Lastly, the class implements a getter for each of the primary variables since they are declared as private within the class.
-//
 
 //Creates class
 public class InterpolationSearch {
